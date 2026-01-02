@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monte SMP</title>
+
+  <!-- Globales CSS und favicon -->
+     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-logo">
+    <a href="/index.html">Monte SMP</a>
+  </div>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle">
+  <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+
+  <ul class="nav-links">
+    <li><a href="/index.html">Startseite</a></li>
+    <li><a href="/features.html">Features</a></li>
+    <li><a href="/community.html">Community</a></li>
+    <li><a href="/downloads.html">Downloads</a></li>
+    <li><a href="/team.html">Team</a></li>
+    <li><a href="/settings.html">Einstellungen</a></li>
+  </ul>
+</nav>
+
+<!-- Seiteninhalt -->
+<div class="container">
+  <h1>Seitentitel</h1>
+  <p>Hier kommt der Seiteninhalt hin.</p>
+
+  <div class="card">
+    <h2>Beispielkarte</h2>
+    <p>Dies ist eine globale Card‑Komponente.</p>
+    <a class="btn" href="#">Button</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  © 2025 Monte SMP – Alle Rechte vorbehalten
+</footer>
+
+<button class="theme-toggle" onclick="toggleTheme()">Theme wechseln</button>
+
+<script>
+  function toggleTheme() {
+    const current = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
+  }
+</script>
+
+</body>
+</html>
