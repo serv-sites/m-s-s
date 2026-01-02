@@ -23,18 +23,27 @@
         <a href="gallery.html">Galerie</a>
         <a href="settings.html">Einstellungen</a>
         <a href="downloads.html">Downloads</a>
+        <a class="active" href="client.html">Client</a>
     </nav>
 </header>
 
 <!-- Seiteninhalt -->
 <div class="container">
-  <h1>Seitentitel</h1>
-  <p>Hier kommt der Seiteninhalt hin.</p>
+  <h1>Unser Client und Launcher</h1>
+  <p>Info zum launcher grade in arbeit und daher epfehlen wir vorerst Legacy launcher zu nutzen</p>
 
-  <div class="card">
-    <h2>Beispielkarte</h2>
-    <p>Dies ist eine globale Card‑Komponente.</p>
-    <a class="btn" href="#">Button</a>
+  <!-- Download-Bereich -->
+  <div class="download-section">
+    <h2>Download</h2>
+    <p>Laden Sie die neueste Version herunter:</p>
+    <a class="btn" href="../assets/downloads/latest-version.zip" download>Download</a>
+  </div>
+
+  <!-- Download-Bereich für den Launcher -->
+  <div class="download-section">
+    <h2>Launcher Download</h2>
+    <p>Laden Sie den Monte SMP Launcher herunter:</p>
+    <a class="btn" href="../assets/downloads/launcher.zip" download>Launcher herunterladen</a>
   </div>
 </div>
 
@@ -42,15 +51,5 @@
 <footer>
   © 2025 Monte SMP – Alle Rechte vorbehalten
 </footer>
-
-<button class="theme-toggle" onclick="toggleTheme()">Theme wechseln</button>
-
-<script>
-  function toggleTheme() {
-    const current = document.body.getAttribute('data-theme');
-    document.body.setAttribute('data-theme', current === 'light' ? 'dark' : 'light');
-  }
-</script>
-
 </body>
 </html>
